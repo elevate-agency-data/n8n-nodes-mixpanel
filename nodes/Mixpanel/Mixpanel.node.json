@@ -1,0 +1,29 @@
+{
+	"node": "n8n-nodes-mixpanelapp.Mixpanel",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Analytics"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.mixpanel.com/reference/service-accounts"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.mixpanel.com/reference/overview"
+			}
+		]
+	},
+	"alias": [
+		"mixpanel",
+		"product analytics",
+		"analytics",
+		"events",
+		"tracking",
+		"funnel",
+		"retention",
+		"cohort",
+		"user profile"
+	]
+}

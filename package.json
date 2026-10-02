@@ -1,0 +1,63 @@
+{
+  "name": "n8n-nodes-mixpanelapp",
+  "version": "1.0.0",
+  "description": "Node N8N to interact with Mixpanel",
+  "license": "MIT",
+  "homepage": "https://github.com/elevate-agency-data/n8n-nodes-mixpanel",
+  "keywords": [
+    "n8n-community-node-package",
+    "mixpanel",
+    "mixpanel-node",
+    "mixpanel-n8n",
+    "mixpanel-n8n-node",
+    "mixpanel-n8n-node-package",
+    "product-analytics",
+    "analytics"
+  ],
+  "author": {
+    "name": "elevate_agency",
+    "email": "conseil@elevate-agency.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elevate-agency-data/n8n-nodes-mixpanel.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "!dist/tsconfig.tsbuildinfo"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/MixpanelServiceAccountApi.credentials.js",
+      "dist/credentials/MixpanelProjectSecretApi.credentials.js",
+      "dist/credentials/MixpanelGdprApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Mixpanel/Mixpanel.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^21.0.2",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
